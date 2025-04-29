@@ -2,7 +2,7 @@
 
 * Pull project from repository
 * Port `8087` must be free, or change port for `webserver` in `compose.yml` to any free
-* Execute `docker-compose up -d` from project root
+* Execute `docker-compose up -d` from project root or `docker compose up -d`
 
 ## API method
 `POST http://127.0.0.1:8087/purchase/{gateway}`
