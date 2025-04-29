@@ -1,0 +1,26 @@
+services:
+  app:
+    container_name: metricalo-app
+    build: .
+    networks:
+      - metricalo
+    volumes:
+      - .:/application
+    restart: always
+
+  webserver:
+    image: nginx:alpine
+    container_name: metricalo-webserver
+    working_dir: /application
+    networks:
+      - metricalo
+    volumes:
+      - .:/application
+      - ./docker/nginx-config/default.nginx:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    ports:
+      - "8087:80"
+
+networks:
+  metricalo:
