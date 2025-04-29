@@ -21,6 +21,6 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY ./composer.* ./
 COPY ./.env ./
 
-# RUN /usr/bin/composer install --no-scripts
+RUN /usr/bin/composer install --no-scripts
 
 RUN chown -R ubuntu:ubuntu /application
