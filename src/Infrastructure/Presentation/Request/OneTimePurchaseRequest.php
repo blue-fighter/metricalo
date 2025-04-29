@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Infrastructure\Presentation\Http\Request;
+namespace App\Infrastructure\Presentation\Request;
 
 use Symfony\Component\Validator\Constraints\CardScheme;
 use Symfony\Component\Validator\Constraints\Currency;

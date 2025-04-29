@@ -4,13 +4,11 @@ namespace App\Infrastructure\Integrations;
 
 use App\Application\Contracts\PurchaseServiceInterface;
 use App\Application\Factory\PurchaseServiceFactoryInterface;
-use App\Infrastructure\Integrations\ACI\AciClient;
 use App\Infrastructure\Integrations\ACI\Services\DebitPaymentService;
 use App\Infrastructure\Integrations\Shift4\Services\ChargeService;
-use App\Infrastructure\Integrations\Shift4\Shift4Client;
-use UnhandledMatchError;
 use Exception;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use UnhandledMatchError;
 
 readonly class PurchaseServiceFactory implements PurchaseServiceFactoryInterface
 {

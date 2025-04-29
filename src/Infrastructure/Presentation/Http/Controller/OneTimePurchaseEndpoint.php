@@ -4,8 +4,8 @@ namespace App\Infrastructure\Presentation\Http\Controller;
 
 use App\Application\Factory\PurchaseRequestFactoryInterface;
 use App\Application\UseCase\ExecuteChargeUseCase;
-use App\Infrastructure\Presentation\Http\Request\OneTimePurchaseRequest;
 use App\Infrastructure\Presentation\Http\Response\ChargeResponse;
+use App\Infrastructure\Presentation\Request\OneTimePurchaseRequest;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;

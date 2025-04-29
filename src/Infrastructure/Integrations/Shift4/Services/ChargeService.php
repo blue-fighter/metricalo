@@ -28,7 +28,7 @@ final readonly class ChargeService implements PurchaseServiceInterface
         return new PurchaseResponse(
             transactionId: $response['id'],
             creationDate: (new DateTimeImmutable)->setTimestamp((int)$response['created']),
-            amount: $response['amount'],
+            amount: bcdiv($response['amount'], 100, 2),
             currency: $response['currency'],
             cardBin: $response['card']['first6']
         );
