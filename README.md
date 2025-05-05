@@ -38,3 +38,5 @@
 `docker exec -it metricalo-app ./bin/console app:purchase`
 
 You can explore how to use it with help `docker exec -it metricalo-app ./bin/console app:purchase --help`
+
+Run tests `docker exec -it metricalo-app ./bin/phpunit`
